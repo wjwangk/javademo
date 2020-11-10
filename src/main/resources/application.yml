@@ -1,0 +1,29 @@
+server:
+   port: 8081
+spring:
+  profiles:
+    active: dev    #使用spring.profiles.active=dev 命令激活dev对应的配置
+---
+server:
+   port: 8082
+spring:
+  profiles: dev   # dev的配置
+
+---
+server:
+   port: 8083
+spring:
+  profiles: prod   #prod的配置
+
+#
+#person:
+#   age: 18
+#   boss: false
+#   birth: 2019/9/16
+#   maps:
+#     k1: v1
+#     k2: 12
+#   lists: [list,zhaowu,wangwu]
+#   dog: {name: 小狗,age: 12}
+#   last-name: zhangsan
+
